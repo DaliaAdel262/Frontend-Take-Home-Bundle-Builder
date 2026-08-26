@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-FREE/Gilroy-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme{
+  --font-gilroy: "Gilroy";
+
+  --color-review-bg: #EDF4FF;
+  --color-primary: #4E2FD2;
+  --color-text-primary: #0B0D10;
+  --color-text-secondary: #1F1F1F;
+  --color-text-teriary: #484848;
+  --color-text-span: #A8B2BD;
+  --color-text-red: #D8392B;
+  --color-text-grey: #575757;
+  --color-text-green: #0AA288;
+  --color-old-price: #6F7882;
+  --color-learn-more: #0000EE;
+  --color-border-light: #CED6DE;
+}
+
+@layer base{
+  html{
+    font-family: var(--font-gilroy);
+  }
+}
