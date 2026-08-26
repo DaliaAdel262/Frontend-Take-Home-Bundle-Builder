@@ -1,9 +1,11 @@
 import './App.css'
+import BundleBuilderPage from './pages/BundleBuilderPage/BundleBuilderPage'
 
 function App() {
 
   return (
     <>
+    <BundleBuilderPage />
     </>
   )
 }
