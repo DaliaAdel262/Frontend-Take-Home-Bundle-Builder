@@ -15,7 +15,6 @@
 .icon-shipping {
     /* Use !important to prevent extensions from overriding this font. */
     font-family: "Review" !important;
-    font-size: 8px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;

@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-FREE/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 @theme{
   --font-gilroy: "Gilroy";
 
@@ -14,6 +21,7 @@
   --color-primary: #4E2FD2;
   --color-text-primary: #0B0D10;
   --color-text-secondary: #1F1F1F;
+  --color-text-secondary-75: rgba(31, 31, 31, 0.75);
   --color-text-teriary: #484848;
   --color-text-span: #A8B2BD;
   --color-text-red: #D8392B;
@@ -22,10 +30,46 @@
   --color-old-price: #6F7882;
   --color-learn-more: #0000EE;
   --color-border-light: #CED6DE;
+
+  --color-selected-variant-border: #0AA288;
+  --color-selected-variant-bg:rgba(29, 240, 187, 0.04);
+
+  --color-quantity-review-disabled-bg: #F1F1F2;
+  --color-quantity-builder-enabled-bg: #F0F4F7;
+  --color-quantity-builder-disabled-border: #E6EBF0;
+}
+
+@utility container {
+  margin-inline: auto;
+  width: 100%;
+
+  @media (min-width: 480px) {
+    max-width: 440px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1196px;
+  }
 }
 
 @layer base{
   html{
     font-family: var(--font-gilroy);
+  }
+}
+
+@keyframes toastEnter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
